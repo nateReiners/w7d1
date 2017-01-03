@@ -9,9 +9,13 @@ export const receiveTodos = (todos) => {
   });
 };
 
+window.receiveTodos = receiveTodos;
+
 export const receiveTodo = (todo) => {
   return ({
     type: RECEIVE_TODO,
     todo
   });
 };
+
+window.receiveTodo = receiveTodo;
